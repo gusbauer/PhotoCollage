@@ -116,17 +116,3 @@ PhotoCollage/
 ├── screenshots/                   # Capturas reales de la aplicación
 └── README.md
 ```
-
-## ✅ Comprobaciones para la entrega
-
-- [ ] Añadir varias fotos y comprobar que no se duplican.
-- [ ] Seleccionar y eliminar una foto; vaciar el collage con confirmación.
-- [ ] Aplicar B/N, sepia, rotación, brillo y restauración.
-- [ ] Probar saturación, texto, ampliación, mezcla y columnas.
-- [ ] Guardar y compartir un JPG real.
-- [ ] Cerrar y volver a abrir la app comprobando el estado.
-- [ ] Añadir capturas reales en `screenshots/`.
-
----
-
-**Proyecto académico — 2.º Desarrollo de Aplicaciones Multiplataforma (DAM).**
