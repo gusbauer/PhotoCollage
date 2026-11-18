@@ -37,15 +37,11 @@ Proyecto práctico de **2.º DAM**: selecciona fotografías del dispositivo, org
 
 ## 📱 Capturas de pantalla
 
-Añadir aquí capturas **reales** del emulador o del móvil antes de entregar:
+## 📱 Capturas de pantalla
 
-| Pantalla | Archivo |
-|---|---|
-| Collage con varias fotografías | `screenshots/01-collage.png` |
-| Imagen seleccionada y controles | `screenshots/02-seleccion.png` |
-| Blanco y negro / sepia | `screenshots/03-filtros.png` |
-| Selector de compartir | `screenshots/04-compartir.png` |
-| JPG guardado | `screenshots/05-guardado.png` |
+![Captura 1](screenshots/Screenshot%202026-11-18%20135909.png)
+
+![Captura 2](screenshots/Screenshot%202026-11-18%20140203.png)
 
 <!-- Tras añadir las imágenes, puedes activar esta galería:
 ![Collage](screenshots/01-collage.png)
