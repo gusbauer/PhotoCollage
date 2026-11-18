@@ -37,8 +37,6 @@ Proyecto práctico de **2.º DAM**: selecciona fotografías del dispositivo, org
 
 ## 📱 Capturas de pantalla
 
-## 📱 Capturas de pantalla
-
 ![Captura 1](screenshots/Screenshot%202026-11-18%20135909.png)
 
 ![Captura 2](screenshots/Screenshot%202026-11-18%20140203.png)
