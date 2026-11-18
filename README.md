@@ -2,7 +2,7 @@
 
 **Editor de collages fotográficos para Android, desarrollado con Kotlin.**
 
-Proyecto práctico de **2.º DAM**: selecciona fotografías del dispositivo, organízalas en una cuadrícula, edítalas individualmente y exporta una composición en formato JPG.
+Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una cuadrícula, edítalas individualmente y exporta una composición en formato JPG.
 
 ![Android](https://img.shields.io/badge/Android-Nativo-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.2.20-7F52FF?logo=kotlin&logoColor=white)
