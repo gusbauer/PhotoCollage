@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photoFrame"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/photo_normal"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/imagePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fotografía del collage" />
+
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:background="#B8000000"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</FrameLayout>

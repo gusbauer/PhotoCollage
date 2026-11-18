@@ -1,0 +1,16 @@
+.gradle/
+**/.gradle/
+**/build/
+**/.idea/
+.idea/
+.vscode/
+**/.kotlin/
+**/local.properties
+local.properties
+*.iml
+*.apk
+*.aab
+*.bak
+*.log
+.DS_Store
+Thumbs.db

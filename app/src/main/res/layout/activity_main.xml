@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PhotoCollage"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="0 fotografías"
+            android:textColor="#475569"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pulsa una foto para editarla · Mantén pulsada para verla grande"
+            android:textColor="#64748B"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ Añadir fotos" android:contentDescription="Añadir fotografías" />
+                <Button android:id="@+id/btnDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eliminar foto" />
+                <Button android:id="@+id/btnDeleteMultiple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eliminar varias" />
+                <Button android:id="@+id/btnClear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vaciar collage" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:minHeight="240dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:minHeight="240dp"
+                android:nestedScrollingEnabled="false"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/textEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Tu collage está vacío.\nPulsa Añadir fotos para empezar."
+                android:textColor="#64748B"
+                android:textSize="17sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Editar fotografía seleccionada"
+            android:textColor="#0F172A" android:textStyle="bold" android:textSize="17sp" />
+
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B/N" />
+                <Button android:id="@+id/btnSepia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sepia" />
+                <Button android:id="@+id/btnRestore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Restaurar" />
+                <Button android:id="@+id/btnRotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Girar 90°" />
+                <Button android:id="@+id/btnText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Añadir texto" />
+                <Button android:id="@+id/btnPreview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ver grande" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView android:id="@+id/textBrightness" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Brillo: 0" android:textColor="#334155" />
+        <SeekBar android:id="@+id/seekBrightness" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="200" android:progress="100" />
+
+        <TextView android:id="@+id/textSaturation" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Saturación: 100 %" android:textColor="#334155" />
+        <SeekBar android:id="@+id/seekSaturation" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="200" android:progress="100" />
+
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/btnColumns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Columnas: 2" />
+                <Button android:id="@+id/btnShuffle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mezclar fotos" />
+                <Button android:id="@+id/btnShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compartir collage" />
+                <Button android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Guardar JPG" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
