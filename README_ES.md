@@ -9,13 +9,13 @@ Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una
 ![Gradle](https://img.shields.io/badge/Gradle-8.13-02303A?logo=gradle&logoColor=white)
 ![API](https://img.shields.io/badge/Min%20SDK-29-blue)
 
-
-## 📱 App screenshots
+## 📱 App Screenshots
 
 <p align="center">
-  <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage screenshot 1" width="44%">
-  <img src="screenshots/Screenshot%202026-11-18%20140203.png" alt="PhotoCollage screenshot 2" width="44%">
+  <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage Android app" width="35%">
+  <img src="screenshots/Screenshot%202026-11-18%20140203.png" alt="PhotoCollage photo editor" width="35%">
 </p>
+
 
 ## ✨ Funcionalidades
 
