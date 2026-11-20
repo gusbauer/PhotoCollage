@@ -9,6 +9,14 @@ Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una
 ![Gradle](https://img.shields.io/badge/Gradle-8.13-02303A?logo=gradle&logoColor=white)
 ![API](https://img.shields.io/badge/Min%20SDK-29-blue)
 
+
+## 📱 App screenshots
+
+<p align="center">
+  <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage screenshot 1" width="44%">
+  <img src="screenshots/Screenshot%202026-11-18%20140203.png" alt="PhotoCollage screenshot 2" width="44%">
+</p>
+
 ## ✨ Funcionalidades
 
 **Collage y selección**
@@ -32,19 +40,6 @@ Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una
 - Guardado en la galería mediante `MediaStore`.
 - Compartición segura mediante `Intent` + `FileProvider`.
 - Conservación local de fotografías y ajustes al volver a abrir la aplicación.
-
-> Los filtros se aplican sobre la foto seleccionada. La aplicación conserva una copia privada del original importado para poder restaurar los ajustes sin modificar la foto de la galería.
-
-## 📱 Capturas de pantalla
-
-![Captura 1](screenshots/Screenshot%202026-11-18%20135909.png)
-
-![Captura 2](screenshots/Screenshot%202026-11-18%20140203.png)
-
-<!-- Tras añadir las imágenes, puedes activar esta galería:
-![Collage](screenshots/01-collage.png)
-![Filtros](screenshots/03-filtros.png)
--->
 
 ## 🛠️ Tecnologías
 
