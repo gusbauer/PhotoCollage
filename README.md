@@ -1,114 +1,125 @@
 # 📸 PhotoCollage
 
-**Editor de collages fotográficos para Android, desarrollado con Kotlin.**
+**Native Android photo collage editor built with Kotlin.**
 
-[🇬🇧 Read in English](README.md) · [🇪🇸 Español](README_ES.md)
+[🇬🇧 English](README.md) · [🇪🇸 Español](README_ES.md)
 
-Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una cuadrícula, edítalas individualmente y exporta una composición en formato JPG.
+PhotoCollage lets users select photos, arrange them into customizable grids, edit individual images, and save or share the final composition as a JPEG. Built using the Android SDK, Kotlin, and XML layouts—without relying on external photo-editing applications.
 
-![Android](https://img.shields.io/badge/Android-Nativo-3DDC84?logo=android&logoColor=white)
+![Android](https://img.shields.io/badge/Android-Native-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.2.20-7F52FF?logo=kotlin&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-8.13-02303A?logo=gradle&logoColor=white)
-![API](https://img.shields.io/badge/Min%20SDK-29-blue)
+![Min SDK](https://img.shields.io/badge/Min%20SDK-29-blue)
 
-## ✨ Funcionalidades
+## 📱 App screenshots
 
-**Collage y selección**
-- Selección múltiple de imágenes con Android Photo Picker.
-- Hasta **30 fotografías** y detección de archivos duplicados mediante SHA-256.
-- Cuadrícula adaptable con `RecyclerView` + `GridLayoutManager`, de **1 a 4 columnas**.
-- Selección visual de una fotografía para editarla.
-- Eliminar una foto, eliminar varias o vaciar el collage (con confirmación).
-- Mezclar el orden de las imágenes.
+The screenshots below show the Android app running on an emulator.
 
-**Edición fotográfica**
-- Filtros **blanco y negro** y **sepia**.
-- Ajustes de **brillo** y **saturación**.
-- Rotación acumulativa de **90°**.
-- Texto personalizado con tamaño y posición.
-- Vista previa ampliada de una fotografía.
-- Restauración de los ajustes originales de cada imagen.
+![PhotoCollage — app screenshot 1](screenshots/Screenshot%202026-11-18%20135909.png)
 
-**Exportación y almacenamiento**
-- Generación de un **JPG** del collage.
-- Guardado en la galería mediante `MediaStore`.
-- Compartición segura mediante `Intent` + `FileProvider`.
-- Conservación local de fotografías y ajustes al volver a abrir la aplicación.
+![PhotoCollage — app screenshot 2](screenshots/Screenshot%202026-11-18%20140203.png)
 
-> Los filtros se aplican sobre la foto seleccionada. La aplicación conserva una copia privada del original importado para poder restaurar los ajustes sin modificar la foto de la galería.
+## ✨ Features
 
-## 📱 Capturas de pantalla
+### Photo selection and collage management
 
-![Captura 1](screenshots/Screenshot%202026-11-18%20135909.png)
+- Select multiple images with the **Android Photo Picker**, up to **30 photos** per collage.
+- Detect duplicate image content using **SHA-256**.
+- Display photos in a **RecyclerView** grid with **1–4 configurable columns**.
+- Highlight the selected photo and edit it independently.
+- Remove one photo, remove several selected for deletion, or clear the collage with confirmation.
+- Shuffle photo order and open an enlarged image preview.
 
-![Captura 2](screenshots/Screenshot%202026-11-18%20140203.png)
+### Image editing
 
-## 🛠️ Tecnologías
+- Apply **grayscale** and **sepia** filters.
+- Adjust **brightness** and **saturation** using sliders.
+- Rotate a photo clockwise in **90° increments**.
+- Add custom text, including size and position controls.
+- **Restore the original appearance** without modifying the source image in the device gallery.
 
-| Tecnología | Uso |
+### Export and persistence
+
+- Render the full collage as a **JPEG** using Android's bitmap and canvas APIs.
+- **Save** the result to the device gallery using **MediaStore**.
+- **Share** the exported file using an Android **Intent** and **FileProvider**.
+- Preserve imported photos, their edits, selection, and layout between app launches.
+
+## 🧠 Technical highlights
+
+| Technology / API | Implementation |
 |---|---|
-| **Kotlin** | Lógica de la aplicación |
-| **Android SDK** | Componentes Android nativos |
-| **XML** | Interfaz gráfica |
-| **RecyclerView** | Cuadrícula de fotografías |
-| **Photo Picker** | Selección de imágenes sin acceso global a la galería |
-| **ColorMatrix** | Filtros, brillo y saturación |
-| **Canvas / Bitmap** | Renderizado del collage |
-| **MediaStore** | Guardado del JPG |
-| **FileProvider** | Compartición segura |
-| **SharedPreferences** | Conservación del estado de edición |
+| **Kotlin + Android SDK** | Native Android app logic and lifecycle |
+| **XML layouts** | Responsive controls and scrollable main screen |
+| **RecyclerView + GridLayoutManager** | Efficient photo grid and configurable columns |
+| **Android Photo Picker** | Photo selection without broad gallery permissions |
+| **SHA-256** | Content-based duplicate detection |
+| **ColorMatrix** | Grayscale, sepia, brightness, and saturation adjustments |
+| **Canvas + Bitmap** | Rendering the edited collage for JPEG export |
+| **MediaStore + FileProvider** | Saving to the gallery and secure sharing |
+| **SharedPreferences** | Persisting the photo collection and editing state |
 
-## 🚀 Instalación y ejecución
+Imported images are stored in the app's private storage, allowing non-destructive editing and restoration of the original appearance.
 
-**Requisitos:** Android Studio, JDK 21, Android SDK 36 y un dispositivo o emulador Android **API 29 o superior**.
+## 🚀 Getting started
 
-1. Clona el repositorio:
+**Requirements:** Android Studio, JDK 21, Android SDK 36, and an Android emulator or device running **API 29+**.
+
+1. Clone this repository:
+
    ```bash
    git clone https://github.com/gusbauer/PhotoCollage.git
    ```
-2. Abre la carpeta `PhotoCollage` desde **Android Studio → File → Open**.
-3. Selecciona **Gradle Wrapper** y **JDK 21**. Sincroniza el proyecto.
-4. Inicia un dispositivo o emulador Android.
-5. Selecciona la configuración `app` y pulsa **Run ▶**.
 
-**Compilar desde Windows (PowerShell):**
+2. Open the `PhotoCollage` folder in **Android Studio**.
+3. Use the project's **Gradle Wrapper** and configure **JDK 21** for Gradle.
+4. Let Gradle sync, then select an emulator or connected Android device.
+5. Run the **app** configuration.
+
+To build a debug APK from Windows PowerShell:
+
 ```powershell
 .\gradlew.bat :app:assembleDebug --console=plain
 ```
 
-El APK de desarrollo se genera en `app/build/outputs/apk/debug/app-debug.apk`. Es un archivo compilado localmente, no es necesario incluirlo en Git.
+The generated APK can be found at:
 
-## 🧭 Cómo utilizar PhotoCollage
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
 
-1. Pulsa **Añadir fotos** y selecciona varias imágenes.
-2. Toca una fotografía para resaltarla.
-3. Aplica filtros, ajusta brillo/saturación o gira la foto.
-4. Utiliza **Restaurar** para recuperar sus ajustes iniciales.
-5. Reorganiza el collage o cambia las columnas.
-6. Pulsa **Guardar** o **Compartir** para exportar la composición.
+## 🧭 How to use
 
-## 📂 Organización del código
+1. Tap **Add photos** (*Añadir fotos* in the app) and choose multiple pictures.
+2. Tap a photo in the grid to select it.
+3. Apply grayscale or sepia, adjust brightness/saturation, rotate, or add text.
+4. Use **Restore** (*Restaurar*) to reset edits for that photo.
+5. Change the number of columns or shuffle the images.
+6. Tap **Save JPG** (*Guardar JPG*) or **Share collage** (*Compartir collage*).
+
+> The app interface is currently in Spanish; this README is available in English and Spanish.
+
+## 📂 Project structure
 
 ```text
 PhotoCollage/
 ├── app/
-│   ├── build.gradle.kts
 │   └── src/main/
 │       ├── AndroidManifest.xml
 │       ├── java/com/gusbauer/photocollage/
-│       │   ├── MainActivity.kt     # Interacción, estado y exportación
-│       │   ├── Foto.kt             # Modelo de fotografía
-│       │   ├── FotoAdapter.kt      # Celdas de la cuadrícula
-│       │   └── Imagenes.kt         # Importación, filtros y renderizado
-│       └── res/
-│           ├── layout/            # Interfaces XML
-│           ├── drawable/          # Resaltado de selección
-│           └── xml/               # Configuración de FileProvider
-├── gradle/wrapper/
-├── gradlew.bat
+│       │   ├── MainActivity.kt     # UI events, state, and export
+│       │   ├── Foto.kt             # Photo data model
+│       │   ├── FotoAdapter.kt      # RecyclerView photo adapter
+│       │   └── Imagenes.kt         # Import, image filters, and rendering
+│       └── res/                   # Layouts, drawables, and provider paths
+├── gradle/                        # Gradle wrapper configuration
+├── screenshots/                   # Real app screenshots
 ├── build.gradle.kts
 ├── settings.gradle.kts
-├── screenshots/                   # Capturas reales de la aplicación
-├── README.md                      # Inglés
-└── README_ES.md                   # Español
+├── README.md                      # English
+└── README_ES.md                   # Spanish
 ```
+
+---
+
+**About this project:** Developed during my Higher Vocational Training in Multiplatform Application Development (DAM) in Spain, as a practical exercise in native Android development and image processing.
