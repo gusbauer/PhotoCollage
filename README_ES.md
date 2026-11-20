@@ -1,4 +1,5 @@
 # 📸 PhotoCollage
+[🇬🇧 English](README.md) · [🇪🇸 Español](README_ES.md)
 
 **Editor de collages fotográficos para Android, desarrollado con Kotlin.**
 
