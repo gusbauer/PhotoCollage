@@ -9,7 +9,7 @@ Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una
 ![Gradle](https://img.shields.io/badge/Gradle-8.13-02303A?logo=gradle&logoColor=white)
 ![API](https://img.shields.io/badge/Min%20SDK-29-blue)
 
-## 📱 App Screenshots
+## 📱 Capturas de pantalla
 
 <p align="center">
   <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage Android app" width="25%">
