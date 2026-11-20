@@ -1,8 +1,8 @@
 # 📸 PhotoCollage
 
-**Native Android photo collage editor built with Kotlin.**
-
 [🇬🇧 English](README.md) · [🇪🇸 Español](README_ES.md)
+
+**Native Android photo collage editor built with Kotlin.**
 
 PhotoCollage lets users select photos, arrange them into customizable grids, edit individual images, and save or share the final composition as a JPEG. Built using the Android SDK, Kotlin, and XML layouts—without relying on external photo-editing applications.
 
@@ -11,13 +11,14 @@ PhotoCollage lets users select photos, arrange them into customizable grids, edi
 ![Gradle](https://img.shields.io/badge/Gradle-8.13-02303A?logo=gradle&logoColor=white)
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-29-blue)
 
-## 📱 App screenshots
 
-The screenshots below show the Android app running on an emulator.
+## 📱 App Screenshots
 
-![PhotoCollage — app screenshot 1](screenshots/Screenshot%202026-11-18%20135909.png)
+<p align="center">
+  <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage Android app" width="25%">
+  <img src="screenshots/Screenshot%202026-11-18%20140203.png" alt="PhotoCollage photo editor" width="25%">
+</p>
 
-![PhotoCollage — app screenshot 2](screenshots/Screenshot%202026-11-18%20140203.png)
 
 ## ✨ Features
 
