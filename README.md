@@ -120,7 +120,3 @@ PhotoCollage/
 ├── README.md                      # English
 └── README_ES.md                   # Spanish
 ```
-
----
-
-**About this project:** Developed during my Higher Vocational Training in Multiplatform Application Development (DAM) in Spain, as a practical exercise in native Android development and image processing.
