@@ -12,8 +12,8 @@ Proyecto práctico: selecciona fotografías del dispositivo, organízalas en una
 ## 📱 App Screenshots
 
 <p align="center">
-  <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage Android app" width="35%">
-  <img src="screenshots/Screenshot%202026-11-18%20140203.png" alt="PhotoCollage photo editor" width="35%">
+  <img src="screenshots/Screenshot%202026-11-18%20135909.png" alt="PhotoCollage Android app" width="25%">
+  <img src="screenshots/Screenshot%202026-11-18%20140203.png" alt="PhotoCollage photo editor" width="25%">
 </p>
 
 
